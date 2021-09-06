@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Sweet outline button</title>
+
+        <style>
+            a.button {
+                margin-top: 30px;
+                transition: box-shadow 50ms ease-in;                
+                padding: 10px; 
+                border-radius: 5px;
+                background: blue;
+                color: white;
+            }
+
+            a.button:hover {
+                box-shadow: 0 0 0 3px tomato;
+            }
+            a.button:focus {
+                outline: 2px solid transparent;
+            }
+            p { margin-bottom: 30px;}
+        </style>
+    </head>
+    <p>I get an outline when you hover over me, but I don't mess up the layout.</p>
+    <a href="#" class="button">One button</a> <a class="button" href="#">Hover me</a> 
+</html>
