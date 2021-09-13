@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+    .flipcard { float: left; width: 240px; height: 340px; border-radius: 5px; padding: 10px; }
+    
+    .flipcard .front
+    {
+        width: 240px;
+        height: 350px;    
+        position: absolute;
+        transform: perspective(600px) rotateY(0deg);   
+        backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+        transition: transform .3s linear 0s;
+        border: 1px solid #ccc; 
+        padding: 10px;
+        border-radius: 5px;
+        border-top-left-radius: 40px;
+    }
+
+    .flipcard img { border-top-left-radius: 35px; }
+
+    /* style the maincontainer class with all child div's of class .back */
+    .flipcard .back
+    {
+        width: 240px;
+        height: 350px;
+        position: absolute;
+        transform: perspective(300px) rotateY(180deg);
+        backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+        transition: transform .3s linear 0s;
+        border: 1px solid #ccc; 
+        padding: 10px;
+        border-radius: 5px;
+        background: #ddd;
+        color: #000;
+        border-bottom-right-radius: 40px;
+    }
+
+    .flipcard .back h2 { margin: 0; }
+    .flipcard .back p { line-height: 1.6em; }
+
+    .flipcard:hover .front { transform: perspective(300px) rotateY(-180deg); }
+    .flipcard:hover .back { transform: perspective(300px) rotateY(0deg); }
+  </style>
+</head>
+<body>
+  
+  <div class="flipcard">    
+    <div class="front">
+      <img src="https://jasongrant.in/i/jasongrant4_mobile.jpg" />
+      <h2>Jason Grant, MSc</h2>
+    </div>
+    <div class="back">
+      <h2>Chief Innovator</h2>
+      <p>Jason Grant is a UX Design with deep background in Computer Science and Business Information Systems.</p>
+      <p>He has been involved in designing some of the world's leading enterprise and consumer sotware.</p>
+      <p>He is a multi award winning designer and loves what he does.</p>
+    </div>
+  </div>
+
+</body>
+</html>
