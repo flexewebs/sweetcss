@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    html { background: white; }
+
+    * { margin: 0; padding: 0; font-family: verdana; }
+
+    .card {        
+        width: 300px;         
+        border: 1px solid #ddd;
+        background: white;                
+        border-radius: 4px;
+        border-top-right-radius: 40px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;        
+        float: left;
+    } 
+    .card img { 
+        border-top-left-radius: 4px;
+        border-top-right-radius: 40px;
+        z-index: -1;
+        float: left;
+    }
+    .card h2 {        
+        color: black;        
+        background: rgba(232, 232, 232, 0.9);
+        height: 60px;
+        padding: 0 5%;        
+        margin-top: -60px;
+        float: left;
+        width: 90%;
+        z-index: 2;
+        line-height: 60px;
+        border-top-left-radius: 40px;
+        text-align: right;
+        border-top: 0.5px solid #ddd;
+        text-transform: uppercase;
+        font-weight: 400;
+
+    } 
+    .card p { line-height: 1.8em; padding: 20px 5%; color: black; float: left; } 
+
+</style>
+</head>
+<body>
+
+<h2>Profile card</h2>
+
+<div class="card">
+  <img src="https://jasongrant.in/i/jasongrant4_mobile.jpg" />
+  <h2>Jason Grant</h2>
+  <p>Multi award winning master UX Designer and a general 
+      UI wizard for complex enterprise systems. Father, husband, maker,
+    author, speaker, musician, artist and cyclist.</p>
+</div>
+
+</body>
+</html>
