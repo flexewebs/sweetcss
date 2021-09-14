@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Image filters</title>
+        <style>
+            div { float: left; width: 300px; margin: 0 1em 1em 0; }
+            .saturation { filter: saturate(120%); -webkit-filter: saturate(120%); -moz-filter: saturate(120%); -o-filter: saturate(120%); -ms-filter: saturate(120%); }
+            .hueRotate {filter: hue-rotate(20deg);-webkit-filter: hue-rotate(20deg);-moz-filter: hue-rotate(20deg);-o-filter: hue-rotate(20deg);-ms-filter: hue-rotate(20deg);}
+            .contrast { filter: contrast(150%); -webkit-filter: contrast(150%);-moz-filter: contrast(150%);-o-filter: contrast(150%);-ms-filter: contrast(150%); }
+            .invert { filter: invert(100%);-webkit-filter: invert(100%);-moz-filter: invert(100%);-o-filter: invert(100%);-ms-filter: invert(100%);}
+            .grayscale { filter: grayscale(100%);-webkit-filter: grayscale(100%);-moz-filter: grayscale(100%);-o-filter: grayscale(100%);-ms-filter: grayscale(100%); }
+            .sepia { filter: sepia(100%);-webkit-filter: sepia(100%);-moz-filter: sepia(100%);-o-filter: sepia(100%);-ms-filter: sepia(100%);}
+            .brightness { filter: brightness(1.2);-webkit-filter: brightness(1.2);-moz-filter: brightness(1.2);-o-filter: brightness(1.2);-ms-filter: brightness(1.2); }
+            .blur {filter: blur(5px);-webkit-filter: blur(5px);-moz-filter: blur(5px);-o-filter: blur(5px);-ms-filter: blur(5px);}
+        </style>
+    </head>
+    <body>
+        <h1>Image filters</h1>
+        <div>
+            <p>Blur</p>
+            <img src="https://jasongrant.in/i/pics/jasonsquarephoto.jpg" class="blur" />
+        </div>
+        <div>
+            <p>Brightness</p>
+            <img src="https://jasongrant.in/i/pics/jasonsquarephoto.jpg" class="brightness" />
+        </div>
+
+        <div>
+            <p>Saturation</p>
+            <img src="https://jasongrant.in/i/pics/jasonsquarephoto.jpg" class="saturation" />
+        </div>
+
+        <div>
+        <p>Sepia</p>
+        <img src="https://jasongrant.in/i/pics/jasonsquarephoto.jpg" class="sepia" />
+        </div>
+
+        <div>
+        <p>Grayscale</p>
+        <img src="https://jasongrant.in/i/pics/jasonsquarephoto.jpg" class="grayscale" />
+        </div>
+
+        <div>
+        <p>Invert</p>
+        <img src="https://jasongrant.in/i/pics/jasonsquarephoto.jpg" class="invert" />
+        </div>
+
+        <div>
+        <p>Contrast</p>
+        <img src="https://jasongrant.in/i/pics/jasonsquarephoto.jpg" class="contrast" />
+        </div>
+
+        <div>
+        <p>Hue rotate</p>
+        <img src="https://jasongrant.in/i/pics/jasonsquarephoto.jpg" class="hueRotate" />        
+        </div>
+
+        <div>
+        <p>Regular image</p>
+        <img src="https://jasongrant.in/i/pics/jasonsquarephoto.jpg" />
+        </div>        
+    </body>
+</html>
