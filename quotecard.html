@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    html { background: white;}
+    * { margin: 0; padding: 0; font-family: sans-serif; }
+    h2 { margin-bottom: 3em;}
+
+
+    /* Component CSS */
+    .card {border: 1px solid black; position: relative; min-height: 200px; width: 300px; margin-right: 20px; border-radius: 10px; float: left; overflow: hidden; } 
+    .card blockquote { font-size: 2em; min-height: 250px; padding: 20px; margin-bottom: 50px; background: white; color: black; }
+    .card .author { position: absolute; bottom: 0; min-height: 50px; background: #ddd; width: 100%;  border-radius: 0px 0px 10px 10px;}
+    .card .author p { color: black; padding: 10px 20px; line-height: 30px; font-size: 1.4em; }
+
+</style>
+</head>
+<body>
+
+<h2>Nicely verticaly resizeable card</h2>
+
+<div class="card">
+    <div class="quote">
+        <blockquote>"Hundreds of millions of dollars of funding just can't buy you a soul."</blockquote>
+    </div>
+    <div class="author">
+        <p>Vitalik Buterin</p>
+    </div>
+</div>
+
+<div class="card">
+    <div class="quote">
+        <blockquote>"The world will recognise you when you recognise yourself. Answer the call of your soul and your true essence will seem obvious to others."</blockquote>
+    </div>
+    <div class="author">
+        <p>Aaron Rose</p>
+    </div>
+</div>
+
+</body>
+</html>
