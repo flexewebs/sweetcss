@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loader 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>        
+        .tile2 div {
+            width: 20px;
+            height: 20px;
+            background: #3D3934;        
+            animation: flipAround 3s infinite;
+            transform-origin: right;            
+        }
+        @keyframes flipAround {
+        25% {
+            transform-origin: right;
+            animation-mode: forwards;
+            transform: rotateY(-180deg);
+            background: #63B1BC;
+        }
+        25.001% {
+            transform-origin: bottom;
+            transform: translateX(20px);
+            background: #63B1BC;
+        }
+        50% {
+            transform-origin: bottom;
+            transform: translateX(20px) rotateX(-180deg);
+            background: #BEBB98;
+        }
+        50.001% {
+            transform-origin: left;
+            transform: translateX(20px) translateY(20px);
+            background: #BEBB98;
+        }
+        75% {
+            transform-origin: left;
+            transform-origin: left;
+            transform: translateX(20px) translateY(20px) rotateY(180deg);
+            background: #FA4617;
+        }
+        75.001% {
+            transform-origin: top;
+            transform: translateY(20px);
+            background: #FA4617;
+        }
+        100% {
+            transform-origin: top;
+            transform-origin: top;
+            transform: translateY(20px) rotateX(180deg);
+            background: #3D3934;
+        }
+        }
+        .tile2 {
+        height: 220px;
+        }
+    </style>
+</head>
+<body>    
+    <div class="tile2">
+        <div></div>
+    </div>
+</body>
+</html>
