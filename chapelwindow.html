@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Sweet outline button</title>
+        <link href="css.css" type="text/css" rel="stylesheet" media="screen,projection" />        
+        <style>
+            .profilecard { border: 0; width: 200px; border-radius: 5px; border-top-left-radius: 50%; border-top-right-radius: 50%; box-shadow: 0px 10px 20px #ddd; padding: 0 0 10px 0; }
+            .profilecard h2 { margin: 10px 20px; font-size: 1.7em; }
+            .profilecard p { margin: 10px 20px; line-height: 1.5em; }
+            .profilecard img { animation: colorise 5s linear 2s infinite forwards; border-top-left-radius: 50%;border-top-right-radius: 50%; }            
+
+            @keyframes colorise {
+                0% { filter: grayscale(100%); }
+                100% { filter: saturate(120%); }
+            }
+        </style>
+    </head>
+    <h1>Profile card</h1>
+    
+    <div class="profilecard">
+        <img src="https://lh3.googleusercontent.com/aYmsPQ2NAEJfB6kSVYtSkI3j_nCCb7fsWW7zENRqc34MzsRL8XC-8EJIrNqMb82HZCMHD1lgR0aOltqHcdC8EV_6tx2Q5o0GeYu8GT4=w600" />
+        <h2>Chapel window</h2>
+        <p>This is the card description which
+            describes what is going on in this card.
+        </p>
+    </div>
+</html>
