@@ -1,6 +1,6 @@
 # CSS Candy Shop
 
-<img src="https://github.com/flexewebs/sweetcss/blob/main/i/cover.jpg" alt="CSS Candy Shop cover" />
+<img src="https://github.com/flexewebs/sweetcss/blob/main/i/cover2.png" alt="CSS Candy Shop cover" />
 
 CSS Candy Shop is a collection of sweet bits of CSS styles which make up for tasty UIs. A kind of a UX Designer's pick 'n' mix store of inspirational and implementable design goodies. Right from the shelf.
 
