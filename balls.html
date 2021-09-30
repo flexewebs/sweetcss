@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Sweet outline button</title>
+
+        <style>
+            html { background: white;}
+            * { margin: 0; padding: 0; }
+            a { float: left; margin-right: 5px; animation: out 0.5s 1 forwards; width: 46px; height: 46px; display: block; line-height: 46px; text-align: center; text-decoration: none; color: black; border-radius: 50%; box-shadow: inset 0px 0px 10px #aaa; font-size: 1.4em; font-weight: bold; }
+            a:hover { color: #333; box-shadow: inset 0px 0px 13px #bbb; animation: in 0.2s 1 forwards; }
+            a:active { background: red; box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9); }
+            @keyframes in {                
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); width: 46px; height: 46px; line-height: 46px; box-shadow: 5px 5px 10px #ccc; background: blue; color: white; }
+            }
+            @keyframes out {
+                0% { transform: rotate(360deg); width: 46px; height: 46px; line-height: 46px; box-shadow: 5px 5px 10px #ccc; }
+                100% { transform: rotate(0deg); width: 46px; height: 46px; line-height: 46px; box-shadow: inset 0px 0px 10px #aaa; }
+            }
+        </style>
+    </head>    
+    <body>
+        <h1>Game ball</h1>
+        <a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#">7</a><a href="#">8</a>
+    </body>
+</html>
