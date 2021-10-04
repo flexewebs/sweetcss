@@ -1,9 +1,59 @@
 html { background: white;}
 * { margin: 0; padding: 0; font-family: 'Courier New', Courier, monospace; color: black; }
-
 h1 { font-size: 3em; margin-bottom: 1em; }
-
-
 .profilecard { border: 1px solid black; }
 
+/* How a CSS file should be organised */
 
+/* Core framework styles */
+
+/* Colours */ 
+.primaryColour {}
+.secondaryColour {}
+.tertiaryColour {}
+.quarternaryColour {}
+
+/* Typography */
+
+* { font-family: [insert]; } 
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+p {} 
+
+/* Forms */
+
+/* ATOMS */
+
+/* Buttons */
+
+/* Input */ 
+
+/* Select */
+
+/* Textarea */
+
+/* Quote */
+
+/* Video */
+
+/* Image / Picture */
+
+/* Lists */ 
+
+/* Notification */
+
+/* Links */ 
+
+/*  */
+
+/* MOLECULES */
+
+/* COMPOUNDS */ 
+
+/* TEMPLATES */
+
+/* PAGES */
