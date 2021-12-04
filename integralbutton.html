@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Sweet outline button</title>
+
+        <style>
+            html { background: white; margin-top: 20px;}
+            * { margin: 0; padding: 0; }
+            a { animation: in 0.5s 1 forwards; border-radius: 30px 0 30px 30px; background: rgb(1,83,198);
+background: linear-gradient(270deg, rgba(1,83,198,1) 0%, rgba(77,134,215,1) 100%); margin: 0 0 100px 0; min-height: 40px; line-height: 46px; text-decoration: none; font-size: 1.4em; padding: 10px; color: #F1F7FE; font-family: Josefin Sans; min-width: 200px; text-align: center; padding: 12px 20px 10px 20px; }
+            a:hover { color: #F1F7FE; animation: out 0.5s 1 forwards; background: rgb(22,22,29);
+background: linear-gradient(270deg, rgba(22,22,29,1) 0%, rgba(1,83,198,1) 100%);}
+            a:active { background: red; box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9); animation: in 0.2s 1 forwards; }
+            @keyframes in {                
+                0% { border-radius: 30px 30px 30px 30px; }
+                100% { border-radius: 30px 30px 30px 0; }
+            }
+            @keyframes out {
+                0% { border-radius: 30px 30px 30px 30px; }
+                100% { border-radius: 30px 30px 0 30px; }
+            }
+        </style>
+    </head>    
+    <body>
+        <a href="">Button</a>
+
+        <div class="shape first"></div>
+    </body>
+</html>
