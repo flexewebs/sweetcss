@@ -5,11 +5,8 @@
         <style>
             html { background: white; margin-top: 20px;}
             * { margin: 0; padding: 0; }
-            a { animation: in 0.5s 1 forwards; border-radius: 30px 0 30px 30px; background: rgb(1,83,198);
-background: linear-gradient(270deg, rgba(1,83,198,1) 0%, rgba(77,134,215,1) 100%); margin: 0 0 100px 0; min-height: 40px; line-height: 46px; text-decoration: none; font-size: 1.4em; padding: 10px; color: #F1F7FE; font-family: Josefin Sans; min-width: 200px; text-align: center; padding: 12px 20px 10px 20px; }
-            a:hover { color: #F1F7FE; animation: out 0.5s 1 forwards; background: rgb(22,22,29);
-background: linear-gradient(270deg, rgba(22,22,29,1) 0%, rgba(1,83,198,1) 100%);}
-            a:active { background: red; box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9); animation: in 0.2s 1 forwards; }
+            
+            
             @keyframes in {                
                 0% { border-radius: 30px 30px 30px 30px; }
                 100% { border-radius: 30px 30px 30px 0; }
@@ -18,11 +15,23 @@ background: linear-gradient(270deg, rgba(22,22,29,1) 0%, rgba(1,83,198,1) 100%);
                 0% { border-radius: 30px 30px 30px 30px; }
                 100% { border-radius: 30px 30px 0 30px; }
             }
+
+            .button {  line-height: 52px; border-radius: 30px 30px 30px 0; margin: 0 0 20px 0; font-family: Josefin Sans; font-size: 1.8em; width: 150px; height: 50px; display: block; }
+            .button:hover { animation: out 0.5s 1 forwards; }
+
+            .shape2 { background: #0153C6; text-align: center; color: #FCFCFC; border: 1px solid #0153C6; } 
+            .shape2:hover { background: #16161d; color: #FCFCFC; border-radius: 20px 20px 0px 20px;border: 1px solid #16161d; }
+            .shape2:active { background: #0153C6; color: #FCFCFC; }
+
+            .shape3 { background: #FCFCFC; text-align: center; color: #16161d; border: 1px solid #16161d; } 
+            .shape3:hover { background: #0153C6; color: #FCFCFC; border-radius: 20px 20px 0px 20px; border: 1px solid  #0153C6; }
+            .shape3:active { background: #16161d; color: #FCFCFC; }
         </style>
     </head>    
-    <body>
-        <a href="">Button</a>
+    <body>        
 
-        <div class="shape first"></div>
+        <a class="button shape2">Join</a>
+
+        <a class="button shape3">Join</a>
     </body>
 </html>
