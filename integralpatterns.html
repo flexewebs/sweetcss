@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Sweet outline button</title>
+
+        <style>
+        html { background: white; margin-top: 20px;}
+        * { margin: 0; padding: 0; }
+        @-webkit-keyframes myanimation{
+            0%{background-position:50% 0%;transform: rotate(0deg); }
+            50%{background-position:51% 100%; transform: rotate(180deg); }
+            100%{background-position:50% 0%;transform: rotate(360deg); }
+        }
+        @-moz-keyframes myanimation{
+            0%{background-position:50% 0%;transform: rotate(0deg); }
+            50%{background-position:51% 100%; transform: rotate(180deg); }
+            100%{background-position:50% 0%;transform: rotate(360deg); }
+        }
+        @keyframes myanimation{
+            0%{background-position:50% 0%;transform: rotate(0deg); border-radius: 50% 50% 50% 0; }
+            50%{background-position:51% 100%; transform: rotate(180deg); border-radius: 25% 25% 25% 25;}
+            100%{background-position:50% 0%;transform: rotate(360deg); border-radius: 0 0 0 50%; }
+        }
+
+        .shape { width: 200px; height: 200px; position: absolute; }
+        .tear { border-radius: 50% 0% 50% 50%; background: #16161d }
+        .place1 { top: 300px; left: 100px; transform: rotate(0deg);  background: #623782;}
+        .place2 { top: 337px; left: 237px; transform: rotate(-60deg);  background: #162783;}
+        .place3 { top: 237px; left: 337px; transform: rotate(-120deg); background: #167282; }
+        .place4 { top: 100px; left: 300px; transform: rotate(180deg); background: #728397; }
+        .place5 { top: 65px; left: 164px; transform: rotate(120deg);  background: #167282;}
+        .place6 { top: 164px; left: 65px; transform: rotate(60deg);  background: #166111;}
+        </style>
+    </head>    
+    <body>        
+        <div class="shape tear place1"></div>        
+        <div class="shape tear place2 "></div>               
+        <div class="shape tear place3"></div>                
+        <div class="shape tear place4"></div>                
+        <div class="shape tear place5"></div>        
+        <div class="shape tear place6"></div>                
+    </body>
+</html>
