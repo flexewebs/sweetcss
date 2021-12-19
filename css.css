@@ -2,35 +2,38 @@
 
 /* Variables */ 
 :root {
+  
+  /* Colours */
+  --ice: rgb(241, 247, 254);
+  --sky: rgb(153, 186, 232);
+  --water: rgb(77, 134, 215); 
+  --purpose: rgb(1, 83, 198); 
+  --possibility: rgb(252, 252, 252);
+  --dust: rgb(231, 231, 232);
+  --cloud: rgb(162, 162, 165);
+  --silver: rgb(91, 91, 96);
+  --universe: rgb(22, 22, 29);
+  --people: rgb(255, 153, 0);
+  --systems: rgb(204, 0, 0);
+  --innovation: rgb(77, 174, 126);
+  --products: rgb(0, 255, 224);
+  --money: rgb(255, 244, 46);
+  --growth: rgb(255, 0, 98);
 
-    /* Colours */
-    --ice: rgb(241, 247, 254);
-    --sky: rgb(153, 186, 232);
-    --water: rgb(77, 134, 215); 
-    --purpose: rgb(1, 83, 198); 
-    --possibility: rgb(252, 252, 252);
-    --dust: rgb(231, 231, 232);
-    --cloud: rgb(162, 162, 165);
-    --silver: rgb(91, 91, 96);
-    --universe: rgb(22, 22, 29);
-    --people: rgb(255, 153, 0);
-    --systems: rgb(204, 0, 0);
-    --innovation: rgb(77, 174, 126);
-    --products: rgb(0, 255, 224);
-    --money: rgb(255, 244, 46);
-    --growth: rgb(255, 0, 98);
+  /* Shapes */
+  --tear: 50% 50% 50% 0; 
+  --inverseTear: 0 0 0 50%; 
+  --tearCorner: 100px; 
 
-    /* Shapes */
-    --tear: 50% 50% 50% 0; 
-    --inverseTear: 0 0 0 50%; 
-    --tearCorner: 100px; 
+  /* Font */
+  --mainFontSize: 12px; 
+  --primaryFont: Josefin Sans;
+  --secondaryFont: Pontano Sans; 
+  --tertiaryFont: Istok Web;
 
-    /* Font */
-    --mainFontSize: 12px; 
-  }
+}
 
-
-* { background: white; font-family: Josefin Sans; color: var(--universe); }
+* { background: var(--possibility); font-family: var(--coreFont); color: var(--universe); }
 
 /* Core framework styles */
 
@@ -96,9 +99,8 @@
 .dustMoneyHG { background: linear-gradient(270deg, var(--money) 0%, var(--dust) 100%); }
 .dustGrowthHG { background: linear-gradient(270deg, var(--growth) 0%, var(--dust) 100%); }
 
-
 /* Typography */
-h1, h2, h3, h4, h5, h6 { margin: 0.5em 0 0.5em 0; }
+h1, h2, h3, h4, h5, h6 { margin: 0.5em 0 0.5em 0; font-family: var(--primaryFont); }
 h1 { font-size: calc(var(--mainFontSize) * 6); }
 h2 { font-size: calc(var(--mainFontSize) * 4); }
 h3 { font-size: calc(var(--mainFontSize) * 3); }
