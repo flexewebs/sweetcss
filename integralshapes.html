@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Sweet outline button</title>
+
+        <style>
+        html { background: white; margin-top: 20px;}
+        * { margin: 0; padding: 0; }
+        @-webkit-keyframes myanimation{
+            0%{background-position:50% 0%;transform: rotate(0deg); }
+            50%{background-position:51% 100%; transform: rotate(180deg); }
+            100%{background-position:50% 0%;transform: rotate(360deg); }
+        }
+        @-moz-keyframes myanimation{
+            0%{background-position:50% 0%;transform: rotate(0deg); }
+            50%{background-position:51% 100%; transform: rotate(180deg); }
+            100%{background-position:50% 0%;transform: rotate(360deg); }
+        }
+        @keyframes myanimation{
+            0%{background-position:50% 0%;transform: rotate(0deg); border-radius: 50% 50% 50% 0; }
+            50%{background-position:51% 100%; transform: rotate(180deg); border-radius: 25% 25% 25% 25;}
+            100%{background-position:50% 0%;transform: rotate(360deg); border-radius: 0 0 0 50%; }
+        }
+
+        .shape { margin-bottom: 30px; }
+        .tear { border-radius: 50% 50% 50% 0%; background: #16161d; width: 400px; height: 400px; }
+        .inverseTear { border-radius: 0 0 0 50%; background: #16161d; width: 400px; height: 400px; }
+        </style>
+    </head>    
+    <body>        
+        <div class="shape tear"></div>
+        <div class="shape inverseTear"></div>
+    </body>
+</html>
