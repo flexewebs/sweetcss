@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Bubbles</title>
+        <link href="css.css" type="text/css" rel="stylesheet" media="screen,projection" />        
+        <style>            
+            body {
+            background: #000;
+            }
+
+            aside[itemscope] {
+            background: #222;
+            overflow: hidden;
+            color: #fff;
+            padding: .5rem;
+            padding-right: 2rem;
+            margin: 0 auto;
+            max-width: 800px;
+            }
+
+            aside[itemscope] h1 {
+            margin-bottom: .5rem;
+            margin-top: 2rem;
+            font-size: 3rem;
+            }
+
+            aside[itemscope] p {
+            line-height: 1.5;
+            font-size: 1.4rem;
+            }
+
+            aside[itemscope] .wrap {
+            float: left;
+            width: 50%;
+            height: auto;
+            -webkit-shape-outside: url('https://thenewcode.com/assets/images/rita-hayworth-mask.png');
+            shape-outside: url('https://thenewcode.com/assets/images/rita-hayworth-mask.png');
+            -webkit-shape-margin: 2em;
+            shape-margin: 2em;
+            }
+        </style>
+    </head>    
+    <body>
+
+    <h1>Text wrap</h1>
+
+    <aside itemscope itemtype="http://schema.org/Person">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/rita-hayworth.png" alt class="wrap" property="image">
+            <h1 itemprop="name">Rita Hayworth</h1>
+        <h2>Actress, dancer, comedienne: <span itemprop=birthDate content="1918-10-17">1918</span> – <span itemprop=deathDate content="1987-05-14">1987</span></h2>
+        <p>Born <span itemprop="additionalName">Margarita Carmen Cansino</span>. One of the original transformative actresses of Hollywood: changed her hair color eight times for eight different films, and her name twice. Appeared in 61 features; one of only six women to dance with both Fred Astaire and Gene Kelly during their careers.
+    </aside>
+
+    </body>
+</html>
