@@ -13,7 +13,7 @@
   --cloud: rgb(162, 162, 165);
   --silver: rgb(91, 91, 96);
   --universe: rgb(22, 22, 29);
-  --people: rgb(255, 153, 0);
+  --people: rgb(32, 28, 23);
   --systems: rgb(204, 0, 0);
   --innovation: rgb(77, 174, 126);
   --products: rgb(0, 255, 224);
@@ -33,7 +33,7 @@
 
 }
 
-* { background: var(--possibility); font-family: var(--coreFont); color: var(--universe); }
+html { background: var(--possibility); font-family: var(--coreFont); color: var(--universe); }
 
 /* Core framework styles */
 
