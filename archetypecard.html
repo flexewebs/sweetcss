@@ -3,11 +3,11 @@
         <title>GIF masking</title>
         <link href="css.css" type="text/css" rel="stylesheet" media="screen,projection" />        
         <style>                        
-            @keyframes fadeIn { 0% {opacity:0;} 100% {opacity:0.9;} }
-            @-moz-keyframes fadeIn { 0% {opacity:0;} 100% {opacity:0.9;} }
-            @-webkit-keyframes fadeIn { 0% {opacity:0;} 100% {opacity:0.9;} }
-            @-o-keyframes fadeIn { 0% {opacity:0;} 100% {opacity:0.9;} }
-            @-ms-keyframes fadeIn { 0% {opacity:0;} 100% {opacity:0.9;} }
+            @keyframes fadeIn { 0% {opacity:0;} 100% {opacity:1;} }
+            @-moz-keyframes fadeIn { 0% {opacity:0;} 100% {opacity:1;} }
+            @-webkit-keyframes fadeIn { 0% {opacity:0;} 100% {opacity:1;} }
+            @-o-keyframes fadeIn { 0% {opacity:0;} 100% {opacity:1;} }
+            @-ms-keyframes fadeIn { 0% {opacity:0;} 100% {opacity:1;} }
             .card { background: url(i/hedonist.jpeg) no-repeat top left; width: 500px; height: 700px; float: left; margin: 20px 0 0 0; }                     
             .aspect { cursor: help;  width: 350px; height: 225px; text-align: center; margin: 50px; float: left; padding: 25px; }                        
             .aspect:hover { animation: fadeIn 1s forwards; -webkit-animation: fadeIn 1s forwards; -moz-animation: fadeIn 1s forwards; -o-animation: fadeIn 1s forwards; -ms-animation: fadeIn 1s forwards;  }
@@ -15,7 +15,7 @@
             .light:hover, .light:active {  background: var(--possibility); border-radius: 0 var(--tearCorner) 0 0; visibility: visible; }
             .light:hover * { color: var(--universe); }
             .shadow { color: transparent; }
-            .shadow:hover, .shadow:active { background: var(--universe); opacity: 0.9; border-radius: 0 0 0 var(--tearCorner); }
+            .shadow:hover, .shadow:active { background: var(--universe); border-radius: 0 0 0 var(--tearCorner); }
             .shadow:hover * { color: var(--possibility);; }
             .card p { font-size: 1.2em; line-height: 1.5em; }
             .card h2 { margin: 20px 0 0 0; font-size: 2em; }
