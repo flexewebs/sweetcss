@@ -4,21 +4,21 @@
 :root {
   
   /* Colours */
-  --ice: rgb(241, 247, 254);
-  --sky: rgb(153, 186, 232);
-  --water: rgb(77, 134, 215); 
-  --purpose: rgb(1, 83, 198); 
-  --possibility: rgb(252, 252, 252);
-  --dust: rgb(231, 231, 232);
-  --cloud: rgb(162, 162, 165);
-  --silver: rgb(91, 91, 96);
-  --universe: rgb(22, 22, 29);
-  --people: rgb(32, 28, 23);
-  --systems: rgb(204, 0, 0);
-  --innovation: rgb(77, 174, 126);
-  --products: rgb(0, 255, 224);
-  --money: rgb(255, 244, 46);
-  --growth: rgb(255, 0, 98);
+  --ice: rgb(241, 247, 254); /* #e5edf9 */
+  --sky: rgb(153, 186, 232); /* #99bae8 */
+  --water: rgb(77, 134, 215); /* #4d86d7 */ 
+  --purpose: rgb(1, 83, 198); /* #0153c6 */ 
+  --possibility: rgb(252, 252, 252); /* #fcfcfc */
+  --cloud: rgb(231, 231, 232); /* #e7e7e8 */ 
+  --dust: rgb(162, 162, 165); /* #a2a2a5 */
+  --silver: rgb(91, 91, 96); /* #5b5b60 */
+  --universe: rgb(22, 22, 29); /* #16161d */
+  --people: rgb(255, 153, 0); /* #ff9900 */ 
+  --systems: rgb(204, 0, 0); /* cc0000 */
+  --innovation: rgb(77, 174, 126); /* #4dae7e */
+  --products: rgb(0, 255, 224); /* #00ffe0 */ 
+  --money: rgb(255, 244, 46); /* #fff42e */
+  --growth: rgb(255, 0, 98); /* #ff0062 */ 
 
   /* Shapes */
   --tear: 50% 50% 50% 0; 
@@ -37,46 +37,46 @@ html { background: var(--possibility); font-family: var(--coreFont); color: var(
 
 /* Core framework styles */
 
-/* --------------- COLOURS ------------------- */ 
+/* --------------- S ------------------- */ 
 /* Blues */
-.iceColourBack { background: var(--ice); }
-.skyColourBack { background:var(--sky); }
-.waterColourBack { background: var(--water); }
-.purposeColourBack { background: var(--purpose); }
-.iceColourFront { color: var(--ice); }
-.skyColourFront { background: var(--sky); }
-.waterColourFront { background: var(--water); }
-.purposeColourFront { background: var(--purpose); }
+.iceBack { background: var(--ice); }
+.skyBack { background:var(--sky); }
+.waterBack { background: var(--water); }
+.purposeBack { background: var(--purpose); }
+.iceFront { color: var(--ice); }
+.skyFront { background: var(--sky); }
+.waterFront { background: var(--water); }
+.purposeFront { background: var(--purpose); }
 
 /* Greys */
 /* Light */ 
-.possibilityColourBack { background: var(--possibility); }
-.dustColourBack { background: var(--dust); } 
-.possibilityColourFront { color: var(--possibility); }
-.dustColourFront { color: var(--dust); } 
+.possibilityBack { background: var(--possibility); }
+.dustBack { background: var(--dust); } 
+.possibilityFront { color: var(--possibility); }
+.dustFront { color: var(--dust); } 
 
 /*Dark*/
-.cloudColourBack { background: var(--cloud); }
-.silverColourBack { background: var(--silver); }
-.universeColourBack { background: var(--universe); }
-.cloudColourFront { color: var(--cloud); }
-.silverColourFront { color: var(--silver); }
-.universeColourFront { color: var(--universe); }
+.cloudBack { background: var(--cloud); }
+.silverBack { background: var(--silver); }
+.universeBack { background: var(--universe); }
+.cloudFront { color: var(--cloud); }
+.silverFront { color: var(--silver); }
+.universeFront { color: var(--universe); }
 
 /* Functional */
 
 /* Dark */
-.peopleColourBack { background: var(--people); }
-.systemsColourBack { background: var(--systems); }
-.innovationColourBack { background: var(--innovation); }
-.peopleColourFront { color: var(--people); }
-.systemsColourFront { color: var(--systems); }
-.innovationColourFront { color: var(--innovation); }
+.peopleBack { background: var(--people); }
+.systemsBack { background: var(--systems); }
+.innovationBack { background: var(--innovation); }
+.peopleFront { color: var(--people); }
+.systemsFront { color: var(--systems); }
+.innovationFront { color: var(--innovation); }
 
 /* Light */
-.productsColourBack { background: var(--products); }
-.moneyColourBack { background: var(--money); }
-.growthColourBack { background: var(--growth); }
+.productsBack { background: var(--products); }
+.moneyBack { background: var(--money); }
+.growthBack { background: var(--growth); }
 
 /* --------------- GRADIENTS ------------------- */ 
 
@@ -98,6 +98,19 @@ html { background: var(--possibility); font-family: var(--coreFont); color: var(
 .dustProductsHG { background: linear-gradient(270deg, var(--products) 0%, var(--dust) 100%); }
 .dustMoneyHG { background: linear-gradient(270deg, var(--money) 0%, var(--dust) 100%); }
 .dustGrowthHG { background: linear-gradient(270deg, var(--growth) 0%, var(--dust) 100%); }
+.dustPeopleHG { background: linear-gradient(270deg, var(--people) 0%, var(--dust) 100%); } 
+.dustSystemsHG { background: linear-gradient(270deg, var(--systems) 0%, var(--dust) 100%); } 
+.dustInnovationHG { background: linear-gradient(270deg, var(--innovation) 0%, var(--dust) 100%); } 
+
+
+/* There should be 24 colour + grey options 
+possibilty + money, growth, products 
+dust + everything (including blues and other greys)
+silver + everything 
+cloud + everything 
+universe + innovation, systems, people 
+all blue combos 
+all grey combos */
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 { margin: 0.5em 0 0.5em 0; font-family: var(--primaryFont); }
