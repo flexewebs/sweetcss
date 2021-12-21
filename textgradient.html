@@ -3,21 +3,32 @@
         <title>Text gradient</title>
         <link href="css.css" type="text/css" rel="stylesheet" media="screen,projection" />        
         <style>        
-            .text-gradient {
-                background:linear-gradient(265.58deg,#9f329f -35.89%,#1161fe 96.06%);
+
+            h1 { font-family: Istok Web;  line-height: 1em;                              }                         
+            .textGradient {
+                /*background:linear-gradient(-90deg, var(--growth),var(--silver) 70%);*/
                 -webkit-background-clip: text;
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
                 -webkit-box-decoration-break: clone;
                 box-decoration-break: clone;
-                line-height:1.2;
-                width:-webkit-fit-content;
-                width:-moz-fit-content;
-                width:fit-content;
+                line-height:1em;                                
+            }
+            section {                 
+                height: 100vh;
+                display: block;                
+                padding: 100px 70px;
+            }
+            p { 
+                font-size: 2em;
+                line-height: 3em;
             }
         </style>
     </head>
     <body>
-        <h1 class="text-gradient">Text gradient</h1>
+        <section class="universeBack">
+            <h1 class="possibilityGrowthHG textGradient">Man cannot stand a meaningless life.</h1>
+            <p class="possibilityGrowthHG textGradient">Carl Jung</p>
+        </section>
     </body>
 </html>
