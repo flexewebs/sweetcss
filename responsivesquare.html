@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Text gradient</title>
+        <link href="css.css" type="text/css" rel="stylesheet" media="screen,projection" />        
+        <style>        
+            .square {
+                width: 19vw;
+                height: 15vw;
+                float: left;   
+                padding: 5vw 2vw 3vw 2vw;                
+                border: 1px solid var(--cloud);
+                border-radius: 50% 50% 50% 0;
+                margin: 0 2vw 2vw 0;
+            }
+            .square:after {
+                content: "";
+                display: block;
+            }            
+            .content { 
+                font-family: var(--primaryFont); 
+                display: flex;
+                align-items: center;
+                justify-content: center; 
+                font-size: calc(var(--mainFontSize) * 3.5); 
+                line-height: calc(var(--mainFontSize) * 3.7);
+                width: 19vw;
+                height: 15vw;
+            }
+            .content .author { 
+                font-size: calc(var(--mainFontSize) * 2); 
+                display: block; 
+                margin-top: 1em; 
+                font-family: var(--secondaryFont); 
+            }
+        </style>
+    </head>
+    <body>
+        <section class="square possibilityMoneyVG">
+            <div class="content">
+                <blockquote>Man cannot stand a meaningless life. <span class="author">Carl Jung</span></blockquote>                 
+            </div>
+        </section>
+        <section class="square possibilityMoneyVG">
+            <div class="content">
+                <blockquote>We can never be for anyone if we are against ourselves. <span class="author">Robert Anthony</span></blockquote>                 
+            </div>
+        </section>
+    </body>
+</html>
