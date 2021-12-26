@@ -1,3 +1,5 @@
+@import url(materialize.css);
+
 /* How a CSS file should be organised */
 
 /* Variables */ 
@@ -198,6 +200,23 @@ p { font-family: var(--secondaryFont);}
 /* ATOMS */
 
 /* Buttons */
+/*
+@keyframes buttonOut { 0% { border-radius: 30px 30px 30px 30px; } 100% { border-radius: 30px 30px 0 30px; }}
+.button { font-family: var(--secondaryFont); text-align: center; border-radius: 0 30px 30px 30px; font-size: calc(var(--mainFontSize) * 1.5); padding: 10px 30px; min-width: 100px; cursor: pointer; font-weight: bold; }
+
+.primary { background: var(--purpose); color: var(--possibility); border: 1px solid var(--purpose); } 
+.primary:hover { background: var(--universe); color: var(--possibility); border: 1px solid var(--universe); } 
+.primary:active { background: var(--growth); color: var(--possibility); border: 1px solid var(--growth); } 
+
+.secondary { background: var(--growth); color: var(--possibility); border: 1px solid var(--growth); } 
+.secondary:hover { background: var(--universe); color: var(--possibility); border: 1px solid var(--universe); } 
+.secondary:active { background: var(--universe); color: var(--possibility); border: 1px solid var(--universe); } 
+
+.tertiary { background: var(--possibility); color: var(--purpose); border: 1px solid var(--purpose); } 
+.tertiary:hover { background: var(--possibility); color: var(--universe); border: 1px solid var(--universe); } 
+.tertiary:active { background: var(--purpose); color: var(--possibility); border: 1px solid var(--purpose); } 
+
+.button:hover { animation: buttonOut 0.5s 1 forwards; } */
 
 /* Input */ 
 
