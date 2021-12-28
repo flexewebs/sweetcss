@@ -1,37 +1,14 @@
 <html>
     <head>
         <title>Sweet outline button</title>
-
+        <link href="css.css" type="text/css" rel="stylesheet" media="screen,projection" />        
         <style>
-            html { background: white; margin-top: 20px;}
-            * { margin: 0; padding: 0; }
-            
-            
-            @keyframes in {                
-                0% { border-radius: 30px 30px 30px 30px; }
-                100% { border-radius: 30px 30px 30px 0; }
-            }
-            @keyframes out {
-                0% { border-radius: 30px 30px 30px 30px; }
-                100% { border-radius: 30px 30px 0 30px; }
-            }
-
-            .button {  text-align: center; line-height: 52px; border-radius: 0 30px 30px 30px; margin: 0 0 20px 0; font-family: Josefin Sans; font-size: 1.8em; width: 150px; height: 50px; display: block; }
-            .button:hover { animation: out 0.5s 1 forwards; }
-
-            .shape2 { color: #FCFCFC; background: #0153C6; border: 1px solid currentColor; } 
-            .shape2:hover { color: #FCFCFC; background: #16161d; border-radius: 20px 20px 0px 20px;border: 1px solid currentColor; }
-            .shape2:active { background: #0153C6; color: #FCFCFC; }
-
-            .shape3 { background: #FCFCFC; color: #16161d; border: 1px solid #16161d; } 
-            .shape3:hover { background: #0153C6; color: #FCFCFC; border-radius: 20px 20px 0px 20px; border: 1px solid  #0153C6; }
-            .shape3:active { background: #16161d; color: #FCFCFC; }
+            html { margin-top: 20px;}
         </style>
     </head>    
     <body>        
-
-        <a class="button shape2">Join</a>
-
-        <a class="button shape3">Join</a>
+        <a href="#" class="animate primary button">Primary</a>
+        <a href="#" class="animate secondary button">Secondary</a>
+        <a href="#" class="animate tertiary button">Tertiary</a>
     </body>
 </html>
