@@ -215,7 +215,7 @@ a { color: var(--growth); text-decoration: underline; }
 @keyframes buttonHovered { 0% { border-radius: 30px 30px 30px 30px; } 100% { border-radius: 30px 30px 0 30px; }}
 .button { display: inline-block; transition:color .4s ease-out,background-color .4s ease-out,border-color .4s ease-out,opacity .4s ease-out,color .4s ease-out,box-shadow .4s ease-out; text-decoration:none; font-family: var(--secondaryFont); text-align: center; border-radius: 0 30px 30px 30px; font-size: calc(var(--mainFontSize) * 1.5); padding: 15px 30px; cursor: pointer; font-weight: bold; }
 .button:hover { animation: buttonHovered 0.5s 1 forwards; }
-.button:focus { border: 2px solid var(--people); }
+.button:focus { text-decoration: underline; box-shadow: 0 0 0 3px var(--people); outline: none; }
 
 .primary { background:linear-gradient(270deg,var(--purpose) 50%,var(--universe) 0); background-position:100%; background-size:200% 100%; color: var(--possibility); } 
 .primary:hover { background-position:0; transition:all .25s ease; color: var(--possibility); } 
