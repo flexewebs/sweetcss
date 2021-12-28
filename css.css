@@ -197,26 +197,55 @@ p { font-family: var(--secondaryFont);}
 
 /* Forms */
 
+/* Style Placeholders */
+::-webkit-input-placeholder { color: var(--dust); }
+::-moz-placeholder { color: var(--dust); }
+:-ms-input-placeholder { color: var(--dust); }
+::-ms-input-placeholder { color: var(--dust); }
+::placeholder { color: var(--dust); }
+
+/* Text inputs */
+input:not([type]),
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea {
+border-bottom: 1px solid var(--dust);
+}
+
 /* ATOMS */
 
 /* Buttons */
-/*
-@keyframes buttonOut { 0% { border-radius: 30px 30px 30px 30px; } 100% { border-radius: 30px 30px 0 30px; }}
-.button { font-family: var(--secondaryFont); text-align: center; border-radius: 0 30px 30px 30px; font-size: calc(var(--mainFontSize) * 1.5); padding: 10px 30px; min-width: 100px; cursor: pointer; font-weight: bold; }
+@keyframes buttonHovered { 0% { border-radius: 30px 30px 30px 30px; } 100% { border-radius: 30px 30px 0 30px; }}
+.animate { transition:color .4s ease-out,background-color .4s ease-out,border-color .4s ease-out,opacity .4s ease-out,color .4s ease-out,box-shadow .4s ease-out }
+.slide { background:linear-gradient(270deg,var(--purpose) 50%,var(--universe) 0); background-position:100%; background-size:200% 100% }
+.slide:hover { background-position:0; color:#fff; transition:all .25s ease }        
+.btn { align-items:center; border-radius:10rem; display:flex; font-weight:600; height:-webkit-fit-content; height:-moz-fit-content; height:56px; padding:.5rem 1rem; text-decoration:none }
 
-.primary { background: var(--purpose); color: var(--possibility); border: 1px solid var(--purpose); } 
-.primary:hover { background: var(--universe); color: var(--possibility); border: 1px solid var(--universe); } 
+.button { align-items:center; border-radius:10rem; display:flex; font-weight:600; height:-webkit-fit-content; height:-moz-fit-content; height:56px; padding:.5rem 1rem; text-decoration:none; font-family: var(--secondaryFont); text-align: center; border-radius: 0 30px 30px 30px; font-size: calc(var(--mainFontSize) * 1.5); line-height: 48px; padding: 0 30px; min-width: 100px; cursor: pointer; font-weight: bold; height: 50px; }
+.button:focus { border: 1px solid var(--people); }
+
+.primary { color: var(--possibility); border: 1px solid var(--purpose); } 
+.primary:hover { background-position:0; transition:all .25s ease; color: var(--possibility); border: 1px solid var(--universe); } 
 .primary:active { background: var(--growth); color: var(--possibility); border: 1px solid var(--growth); } 
 
 .secondary { background: var(--growth); color: var(--possibility); border: 1px solid var(--growth); } 
 .secondary:hover { background: var(--universe); color: var(--possibility); border: 1px solid var(--universe); } 
-.secondary:active { background: var(--universe); color: var(--possibility); border: 1px solid var(--universe); } 
+.secondary:active { background: var(--purpose); color: var(--possibility); border: 1px solid var(--purpose); } 
 
 .tertiary { background: var(--possibility); color: var(--purpose); border: 1px solid var(--purpose); } 
 .tertiary:hover { background: var(--possibility); color: var(--universe); border: 1px solid var(--universe); } 
 .tertiary:active { background: var(--purpose); color: var(--possibility); border: 1px solid var(--purpose); } 
 
-.button:hover { animation: buttonOut 0.5s 1 forwards; } */
+.button:hover { animation: buttonHovered 0.5s 1 forwards; }
 
 /* Input */ 
 
